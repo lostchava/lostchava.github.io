@@ -1,5 +1,8 @@
-.ProfContainer{
+#ProfContainer{
     display: flex;
-    height: 30%;
-    width: 100%;
+}
+img{
+width: 200px;
+height: 220px;
+border-radius: 8px;
 }
