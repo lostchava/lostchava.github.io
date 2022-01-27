@@ -12,3 +12,10 @@ h1{
 h2{
     text-align: center;
 }
+body{
+background-color: lightblue; 
+}
+p{
+    width: 60%;
+    text-align: center;
+}
