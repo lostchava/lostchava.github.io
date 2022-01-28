@@ -18,4 +18,9 @@ background-color: lightblue;
 p{
     width: 60%;
     text-align: left;
+    padding-left: 1%;
+}
+li{
+    width: 80%;
+    padding-bottom: 1%;
 }
