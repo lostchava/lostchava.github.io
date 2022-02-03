@@ -5,17 +5,20 @@
         <meta name="description" content="Andrew Sprague Homework 1">
         <title>Homework Assignment 1</title>  
         <link rel="stylesheet" type="text/css" href="index.css"> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
     </head>  
     <body>
         <h1>CIS-128 OLH Mobile Web App Development</h1>
         <button style="background-color: rgb(197, 96, 13);" type="button" >
             Start Animation
             </button>
-            <script>  $("button").click(function(){
-                $("h1").animate({left: '250px'});
-              }); 
-              </script>
         <div id="ProfContainer">
             <img src="picture.jpg" alt="Andrew sitting on a green bench at the park using sunglasses holding a sandwich"> 
             <p>My name is Andrew Sprague and I am a student at CSM currently studying computer science. I am born and raised in the bay area my whole life and so has the majority of my family.
