@@ -45,13 +45,13 @@ ul.navigation {
     ul.navigation {
         /*medium screens */
         align-content: flex-start;
-    
+        flex-direction: column;
     }
 }
 @media all and (max-width: 500px) {
     ul.navigation {
         flex-direction: column;
-        column-gap: 20px;
+        gap: 10px;
     }
 }
     
