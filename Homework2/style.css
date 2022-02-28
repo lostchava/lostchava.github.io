@@ -35,9 +35,27 @@ div#header{
             }
     
 ul.navigation {
-    list-style:none;	/* this removes the bullets from list elements */
-    margin-top:20px;	/* giving the ul a top margin of 20px */
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    /*list-style:none;	/* this removes the bullets from list elements */
+    /*margin-top:20px;	/* giving the ul a top margin of 20px */
 }
+@media all and (max-width: 800px){
+    ul.navigation {
+        /*medium screens */
+        align-content: flex-start;
+    
+    }
+}
+@media all and (max-width: 500px) {
+    ul.navigation {
+        flex-direction: column;
+        column-gap: 20px;
+    }
+}
+    
+
                 
 ul.navigation li{
     display:inline-block; /* an inline block element can have width and height applied to it / and if not, they only take up as much space as the content within allows */
