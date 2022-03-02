@@ -91,6 +91,7 @@ div.col-right{
     flex-direction: column;
     align-items: flex-start;
     order: 5;
+    
     /*float:right;*/
     width:660px
      }
