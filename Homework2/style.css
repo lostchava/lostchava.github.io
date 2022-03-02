@@ -38,15 +38,15 @@ ul.navigation {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 3px;
     /*list-style:none;	/* this removes the bullets from list elements */
-    /*margin-top:20px;	/* giving the ul a top margin of 20px */
+    margin-top:20px;	/* giving the ul a top margin of 20px */
 }
-@media all and (max-width: 800px){
+/* @media all and (max-width: 800px){
     ul.navigation {
         /*medium screens */
-        align-content: flex-start;
-        flex-direction: column;
+        /* align-content: flex-start; */
+        /* flex-direction: column;
         gap: 10px;
     }
 }
@@ -55,9 +55,11 @@ ul.navigation {
         flex-direction: column;
         gap: 10px;
     }
-}
+} */ 
     
-
+.col-right h1 {
+    margin-bottom: 1.5%;
+}
                 
 ul.navigation li{
     display:inline-block; /* an inline block element can have width and height applied to it / and if not, they only take up as much space as the content within allows */
@@ -82,41 +84,60 @@ ul.navigation li a:hover{
 
 div.content{
     display: flex;
+    justify-content: space-between;
     margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
     width:900px;
 }
-            
+.sidebar-left h3{
+    margin: 0;
+}
+.col-right h3 {
+    margin: 2% 0;
+    width: 100%;
+}            
 div.col-right{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    order: 5;
-    
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+
+    /*flex-direction: column;*/
+    /* align-items: flex-start; */
+    order: 2;
+
     /*float:right;*/
     width:660px
      }
-    @media all and (max-width: 800px){
+    /* @media all and (max-width: 800px){
         div.col-right {
             /*medium screens */
-            align-content: flex-start;
+            /* align-content: flex-start;
             flex-direction: column;
         }
-    }
-    @media all and (max-width: 500px) {
+    } */
+    /* @media all and (max-width: 500px) {
         div.col-right {
             align-content: flex-start;
             flex-direction: column;
             gap: 10px;
         }
-    }
+    } */ 
+#imageText{ 
+    
+    width: 68.15%; 
+    
+}
     
 div.sidebar-left{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     align-items: flex-start;
     /*float:left;*/
+    /* order: 1; */
     padding:0 10px;
-    width:200px;	
+    width:200px;
+
 }
     
     /* when floating content next to each other, applying set widths will make the content play nice with each other. Change the width of the siebar, or take away the width of the above "div.col-right" and see what happens to get a better idea of how widths effect floats */
@@ -131,6 +152,7 @@ div.sidebar-left a:hover{
 }	/* when hovering over a link, in the sidebar, this turns off the underline */
 
 .list{
+    width: 100%;
     border-bottom:1px solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
     padding:0 0 20px 15px;	/* adds spacing to the bottom of the list to further divide the content for eaier segragation */
 }
@@ -163,3 +185,32 @@ div#footer{
 .clear{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }	
+
+@media screen and (min-width: 341px) and (max-width:640px){
+h3{
+    color: yellow;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width:961px){
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+        h3{
+            color: green;
+        }
+    
+}
+
+@media screen and(min-width: 962px) {
+    h3{
+        color: blue;
+    }
+}
+
+@media screen and(min-width: 1262px) and (max-width: 1500px){
+    h3{
+        color: red;
+    }
+}
