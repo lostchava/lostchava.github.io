@@ -4,10 +4,12 @@ body, h1, h2, h3, p, img, ul, li{
     /*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
     are reset and can now be set to whatever properties that would suit your website best. */
 
+
 body{
     background:#eaf8fb;	/* a light blue background color. */
     font-family:Arial, Helvetica, sans-serif; /* the font family for all text on the web page is now either arial, helvetica or a sans-serif font if those two are not available */
-    font-size:13px; /* all normal text on the web page has a base font size of 14px now */
+    font-size:13px;
+     /* all normal text on the web page has a base font size of 14px now */
 }
     
 p{
@@ -36,26 +38,14 @@ div#header{
     
 ul.navigation {
     display: flex;
+    flex: 1 0 auto;
     flex-flow: row wrap;
     justify-content: flex-start;
     gap: 3px;
     /*list-style:none;	/* this removes the bullets from list elements */
     margin-top:20px;	/* giving the ul a top margin of 20px */
 }
-/* @media all and (max-width: 800px){
-    ul.navigation {
-        /*medium screens */
-        /* align-content: flex-start; */
-        /* flex-direction: column;
-        gap: 10px;
-    }
-}
-@media all and (max-width: 500px) {
-    ul.navigation {
-        flex-direction: column;
-        gap: 10px;
-    }
-} */ 
+
     
 .col-right h1 {
     margin-bottom: 1.5%;
@@ -84,6 +74,7 @@ ul.navigation li a:hover{
 
 div.content{
     display: flex;
+    flex: 1 0 auto;
     justify-content: space-between;
     margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
     width:900px;
@@ -100,34 +91,15 @@ div.col-right{
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-between;
-
-    /*flex-direction: column;*/
-    /* align-items: flex-start; */
     order: 2;
-
-    /*float:right;*/
     width:660px
      }
-    /* @media all and (max-width: 800px){
-        div.col-right {
-            /*medium screens */
-            /* align-content: flex-start;
-            flex-direction: column;
-        }
-    } */
-    /* @media all and (max-width: 500px) {
-        div.col-right {
-            align-content: flex-start;
-            flex-direction: column;
-            gap: 10px;
-        }
-    } */ 
 #imageText{ 
     
     width: 68.15%; 
     
 }
-    
+   
 div.sidebar-left{
     display: flex;
     flex-wrap: wrap;
@@ -168,11 +140,13 @@ div.sidebar-left a:hover{
 div#footer{
     background-color:#c4d5d9;
     margin:0 auto;
-    padding:15px;
+    padding:15px 0;
     text-align:center;
     width:900px;
 }
 .float-left{
+    width: auto;
+    height: auto;
     float:left;	/* use this on an element (like an image) to make it float to the left of it's containing HTML element */
     margin:0  10px 10px 0;
 }
@@ -186,31 +160,75 @@ div#footer{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }	
 
-@media screen and (min-width: 341px) and (max-width:640px){
-h3{
-    color: yellow;
+/* phone styles */
+@media screen and (max-width:480px){
+    .col-right p{
+        margin-top: 1%;
+        text-align: center;
+    }
+    .col-right {
+    flex-direction: column; 
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+}
+.float-left{
+    width: 50%; 
+    height: auto;}
+#imageText {
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+}
+div.content{
+    flex-direction: column;
+    align-items: center;
+}
+div#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col-right h1 {
+    margin: 0%;
+}
+.col-right h3 {
+    margin: 0%;
+}
+h3 {
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+}
+#footer{
+    margin:0;
+    padding:15px 0;
+    text-align:center;
+    width:900px;
+}
+body{
+    font-size: 1.5em;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.list li a {
+font-size: .75em;
+}
+div.sidebar-left p{
+margin-top: 1%;
+text-align: center;
+}
+div.sidebar-left{
+width: 80%;
 }
 }
 
-@media screen and (min-width: 641px) and (max-width:961px){
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-        h3{
-            color: green;
-        }
-    
-}
 
-@media screen and(min-width: 962px) {
-    h3{
-        color: blue;
-    }
-}
-
-@media screen and(min-width: 1262px) and (max-width: 1500px){
-    h3{
-        color: red;
-    }
+/*Tablet styles/desktop*/
+@media screen and (min-width: 481px){
+  
 }
