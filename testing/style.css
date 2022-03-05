@@ -7,7 +7,7 @@ body, h1, h2, h3, p, img, ul, li{
 body{
     background:#eaf8fb;	/* a light blue background color. */
     font-family:Arial, Helvetica, sans-serif; /* the font family for all text on the web page is now either arial, helvetica or a sans-serif font if those two are not available */
-    font-size:13px; /* all normal text on the web page has a base font size of 14px now */
+    font-size:0.7rem; /* all normal text on the web page has a base font size of 14px now */
 }
     
 p{
@@ -48,7 +48,7 @@ ul.navigation li a{
     background:#4a4a4a;	/* this is a dark grey background for the link */
     color:#fff;	/* this makes the link text white */
     -moz-border-radius:2px; 
-    webkit-border-radius:2px; 
+    /* webkit-border-radius:2px;  */
     border-radius:2px;	/* these 3 lines of border-radius code make rounded corners work in firefox, safari, chrome, opera and IE9 */
     border:1px solid #595959; /* this adds a light grey solid border of 1px width around the link */
     padding:3px 10px;	/* as the name implies, this adds extra padding around the link, so that the borders don't bump up against the link text */
@@ -60,7 +60,7 @@ ul.navigation li a:hover{
     
 }
 
-div.content{
+div.main{
     margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
     width:900px;
 }
@@ -84,6 +84,7 @@ div.sidebar-left a:hover{
     text-decoration:none
 }	/* when hovering over a link, in the sidebar, this turns off the underline */
 
+
 .list{
     border-bottom:1px solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
     padding:0 0 20px 15px;	/* adds spacing to the bottom of the list to further divide the content for eaier segragation */
@@ -92,12 +93,22 @@ div.sidebar-left a:hover{
     margin-bottom:10px
 }
 .list li a{
+    text-decoration: none;
     font-weight:bold;	/* this makes all anchor classes with .list bold without using <strong>  */
     text-transform:uppercase;	/* this makes all anchor classes with .list uppercase  */
-    font-size:11px;	/* this makes all anchor classes with .list applied 11px tall  */
+    font-size: 0.5rem;	/* this makes all anchor classes with .list applied 11px tall  */
 }
-            
+a:hover {
+    background-color: yellow;
+  } 
+@keyframes animation{
+    from { background-color: red;}
+    to {background-color: yellow;}
+    }
+
 div#footer{
+    animation-name: animation;
+    animation-duration: 4s;
     background-color:#c4d5d9;
     margin:0 auto;
     padding:15px;
@@ -118,74 +129,14 @@ div#footer{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }	
 /* phone styles */
-@media screen and (max-width:480px){
-    .col-right p{
-        margin-top: 1%;
-        text-align: center;
-    }
-    .col-right {
-    flex-direction: column; 
-    justify-content:center;
-    align-items: center;
-    width: 80%;
-}
-.float-left{
-    width: 50%; 
-    height: auto;}
-#imageText {
-    width: 100%;
-    margin-top: 1%;
-    text-align: center;
-}
-div.content{
-    flex-direction: column;
-    align-items: center;
-}
-div#header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.col-right h1 {
-    margin: 0%;
-}
-.col-right h3 {
-    margin: 0%;
-}
-h3 {
-    font-size: 1.25em;
-    text-align: center;
-    width: 100%;
-}
-#footer{
-    margin:0;
-    padding:15px 0;
-    text-align:center;
-    width:900px;
-}
-body{
-    font-size: 1.5em;
-    flex-direction: column;
-}
-.list{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-.list li a {
-font-size: .75em;
-}
-div.sidebar-left p{
-margin-top: 1%;
-text-align: center;
-}
-div.sidebar-left{
-width: 80%;
-}
+@media screen and (max-width:600px){
+    header, footer, main, div.sidebar-left, div.col-right {width: 100%; padding: 5px; box-sizing: border-box;}
+    ul.navigation li{ width: 100%; text-align: center; line-height: 2rem; height: 2rem;}
 }
 
-
-/*Tablet styles/desktop*/
-@media screen and (min-width: 481px){
-  
+@media screen and (min-width:601px){
+    header, footer, main{min-width: 930px; width:870px; margin: auto; }
+    header, footer, main{padding: 15px;}
+    div.sidebar-left{float: left; width: 200px;}
+    div.col-right{float: right; width:660px;}
 }
