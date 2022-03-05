@@ -4,21 +4,16 @@ body, h1, h2, h3, p, img, ul, li{
     /*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
     are reset and can now be set to whatever properties that would suit your website best. */
 
-
 body{
-    /* display: inline-block; */
-    margin: 0;
     background:#eaf8fb;	/* a light blue background color. */
     font-family:Arial, Helvetica, sans-serif; /* the font family for all text on the web page is now either arial, helvetica or a sans-serif font if those two are not available */
-    font-size:13px;
-     /* all normal text on the web page has a base font size of 14px now */
+    font-size:13px; /* all normal text on the web page has a base font size of 14px now */
 }
     
 p{
     letter-spacing:.04em; /* letter spacing sets the horizontal spacing (kerning) between letters in a block of text. */
     line-height:21px; /* line height sets the vertical spacing between lines of text. */
 }
-
     
 div#header{
     background-color:#333; /* a more specific way to set a background color */
@@ -40,18 +35,8 @@ div#header{
             }
     
 ul.navigation {
-    display: flex;
-    flex: 1 0 auto;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 3px;
-    /*list-style:none;	/* this removes the bullets from list elements */
+    list-style:none;	/* this removes the bullets from list elements */
     margin-top:20px;	/* giving the ul a top margin of 20px */
-}
-
-    
-.col-right h1 {
-    margin-bottom: 1.5%;
 }
                 
 ul.navigation li{
@@ -63,7 +48,7 @@ ul.navigation li a{
     background:#4a4a4a;	/* this is a dark grey background for the link */
     color:#fff;	/* this makes the link text white */
     -moz-border-radius:2px; 
-    /* webkit-border-radius:2px;  */
+    webkit-border-radius:2px; 
     border-radius:2px;	/* these 3 lines of border-radius code make rounded corners work in firefox, safari, chrome, opera and IE9 */
     border:1px solid #595959; /* this adds a light grey solid border of 1px width around the link */
     padding:3px 10px;	/* as the name implies, this adds extra padding around the link, so that the borders don't bump up against the link text */
@@ -76,47 +61,20 @@ ul.navigation li a:hover{
 }
 
 div.content{
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: space-between;
     margin:15px auto; /* this adds a margin of 15px to the top and bottom of the div with the class of content.  The auto margin applies to the left and right side of the div which is what centers the div in the middle of the page. */
     width:900px;
 }
-.sidebar-left h3{
-    margin: 0;
-}
-.col-right h3 {
-    margin: 2% 0;
-    width: 100%;
-}            
+            
 div.col-right{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-between;
-    order: 2;
+    float:right;
     width:660px
-     }
-#imageText{ 
+    }
     
-    width: 68.15%; 
-    
-}
-   
 div.sidebar-left{
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    align-items: flex-start;
-    /*float:left;*/
-    /* order: 1; */
+    float:left;
     padding:0 10px;
-    width:200px;
-
-}
-    
-    /* when floating content next to each other, applying set widths will make the content play nice with each other. Change the width of the siebar, or take away the width of the above "div.col-right" and see what happens to get a better idea of how widths effect floats */
-    
+    width:200px;	/* when floating content next to each other, applying set widths will make the content play nice with each other. Change the width of the siebar, or take away the width of the above "div.col-right" and see what happens to get a better idea of how widths effect floats */
+    }
     
 div.sidebar-left a{
     color:#445e64;	/* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
@@ -127,7 +85,6 @@ div.sidebar-left a:hover{
 }	/* when hovering over a link, in the sidebar, this turns off the underline */
 
 .list{
-    width: 100%;
     border-bottom:1px solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
     padding:0 0 20px 15px;	/* adds spacing to the bottom of the list to further divide the content for eaier segragation */
 }
@@ -135,31 +92,19 @@ div.sidebar-left a:hover{
     margin-bottom:10px
 }
 .list li a{
-    text-decoration: none;
     font-weight:bold;	/* this makes all anchor classes with .list bold without using <strong>  */
     text-transform:uppercase;	/* this makes all anchor classes with .list uppercase  */
     font-size:11px;	/* this makes all anchor classes with .list applied 11px tall  */
 }
-a:hover {
-    background-color: yellow;
-  }
-@keyframes animation{
-from { background-color: red;}
-to {background-color: yellow;}
-}
-
+            
 div#footer{
-    animation-name: animation;
-    animation-duration: 4s;
     background-color:#c4d5d9;
     margin:0 auto;
-    padding:15px 0;
+    padding:15px;
     text-align:center;
     width:900px;
 }
 .float-left{
-    width: auto;
-    height: auto;
     float:left;	/* use this on an element (like an image) to make it float to the left of it's containing HTML element */
     margin:0  10px 10px 0;
 }
@@ -172,7 +117,6 @@ div#footer{
 .clear{
     clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }	
-
 /* phone styles */
 @media screen and (max-width:480px){
     .col-right p{
@@ -214,8 +158,6 @@ h3 {
     width: 100%;
 }
 #footer{
-    position: fixed;
-    bottom: 0;
     margin:0;
     padding:15px 0;
     text-align:center;
