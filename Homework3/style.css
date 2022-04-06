@@ -1,0 +1,23 @@
+body{
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 4rem;
+} 
+ul{
+    padding-left: 0rem;
+    padding-right: 2rem;
+    list-style-type: none;
+}
+#social{
+    display: flex;
+}
+#social a{
+    padding: 0rem;
+    padding-left: 0.5rem;
+}
+.btn{
+    margin-top: 1rem;
+}
+.form-group{
+    margin-top: 0.5rem;
+}
