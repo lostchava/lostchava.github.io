@@ -1,15 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html  lang="en">
+   <!-- manifest="mycache.appcache  might be used for manifest -->
 <head>
     <meta charset="UTF-8">
     <title>Service Worker offline demo</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+    <link rel="manifest" href="/manifest.json">
+
+
+    <style> 
+    body {   
+        background-image: url(''); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
 </head>
+
 <body>
 <div>
 <h1>Learning About Service Workers</h1>
+    <label for="Backgroundimage">Choose a background color:</label>
+    <select name="Backgroundimagecolor" id="Backgroundimage">
+        <option value="">Please choose a Background</option>
+      <option value="Blue">Blue</option>
+      <option value="Gold">Gold</option>
+    </select>
 <p><img src="images/offline.png" alt="offline icon">A simple static page to demonstrate the use of service workers</p>
 </div>
 </body>
+<script>
+document.getElementById('Backgroundimage').addEventListener('change', function() {
+    let bgi=document.getElementById("Backgroundimage");
+    if (bgi.selectedIndex === 1)
+        document.body.style.backgroundImage = "url(lightblue.jpg)"
+    else if (bgi.selectedIndex === 2)
+        document.body.style.backgroundImage = "url(lightgold.jpg)"
+    else document.body.style.backgroundImage = ""
+}); 
+
+
+
+</script>
 <script src="app.js"></script>
 </html>
