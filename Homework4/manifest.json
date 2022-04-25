@@ -8,19 +8,19 @@
   "orientation": "portrait-primary",
   "icons": [
       {
-        "src": "icon-192.png",
+        "src": "Icon-192.png",
         "type": "image/png", "sizes": "192x192"   
       },
       {
-        "src": "icon-256.png",
+        "src": "Icon-256.png",
         "type": "image/png", "sizes": "256x256"   
       },
       {
-        "src": "icon-384.png",
+        "src": "Icon-384.png",
         "type": "image/png", "sizes": "384x384"   
       },
       {
-        "src": "icon-512-1.png",
+        "src": "Icon-512-1.png",
         "type": "image/png", "sizes": "512x512"   
       }
   ]
