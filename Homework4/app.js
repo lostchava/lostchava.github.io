@@ -1,9 +1,8 @@
-if (navigator.serviceWorker) {
-    window.addEventListener('load', () => {
-	   navigator.serviceWorker.register('./service-worker.js')
-	      .then(registration => console.log('SW registered'))
-		  .catch(err => console.log(`SW not registered - Error: ${err}`))
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
     })
-} else {
-    console.log('Service Worker is not supported in this browser.')
-}
+  }
