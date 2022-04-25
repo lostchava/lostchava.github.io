@@ -1,5 +1,10 @@
+html {
+	height: 100%;
+}
+
 body { background-color: white; 
        font-family: Helvetica, Arial, sans-serif; 
+	   min-height: 100%;
 	   font-size: 1.5em; 
 	   color: blue; }
 	   
