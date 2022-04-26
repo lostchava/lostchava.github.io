@@ -1,23 +1,3 @@
-// const progressiveWebApplication = "PWA-v1"
-// const assets = [
-//   "/styles.css",
-//   "/app.js",
-// ]
-
-// self.addEventListener("install", installEvent => {
-//   installEvent.waitUntil(
-//     caches.open(progressiveWebApplication).then(cache => {
-//       cache.addAll(assets)
-//     })
-//     )
-//   })
-//   self.addEventListener("fetch", fetchEvent => {
-//     fetchEvent.respondWith(
-//       caches.match(fetchEvent.request).then(res => {
-//         return res || fetch(fetchEvent.request)
-//       })
-//       )
-//     })
     var CACHE_VERSION = 'PWA-v1';
     var CACHE_FILES = [
       "index.html",
