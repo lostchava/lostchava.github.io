@@ -1,9 +1,9 @@
 const progressiveWebApplication = "PWA-v1"
 const assets = [
   "/",
-  "index.html",
-  "style.css",
-  "app.js",
+  "/index.html",
+  "/style.css",
+  "/app.js",
   "Icon-192.png",
   "Icon-256.png",
   "Icon-384.png",
