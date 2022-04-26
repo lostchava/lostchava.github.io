@@ -20,15 +20,15 @@
 //     })
     var CACHE_VERSION = 'PWA-v1';
     var CACHE_FILES = [
-      "/index.html",
+      "index.html",
       'app.js',
       'styles.css',
-      "/Icon-192.png",
-      "/Icon-256.png",
-      "/Icon-384.png",
-      "/Icon-512-1.png",
-      "/lightblue.jpg",
-      "/lightgold.jpg",
+      "Icon-192.png",
+      "Icon-256.png",
+      "Icon-384.png",
+      "Icon-512-1.png",
+      "lightblue.jpg",
+      "lightgold.jpg",
   ];
   
   self.addEventListener('install', event => {
