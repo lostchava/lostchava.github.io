@@ -20,7 +20,6 @@
 //     })
     var CACHE_VERSION = 'PWA-v1';
     var CACHE_FILES = [
-      "/",
       "/index.html",
       'app.js',
       'styles.css',
