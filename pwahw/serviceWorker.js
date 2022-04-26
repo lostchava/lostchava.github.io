@@ -18,7 +18,7 @@
 //       })
 //       )
 //     })
-    var CACHE_VERSION = 'myapp-v1';
+    var CACHE_VERSION = 'PWA-v1';
     var CACHE_FILES = [
       "/",
       "/index.html",
