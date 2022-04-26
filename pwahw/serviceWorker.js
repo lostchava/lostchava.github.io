@@ -8,7 +8,7 @@ const assets = [
   "/Icon-256.png",
   "/Icon-384.png",
   "/Icon-512-1.png",
-  "/lightbulue.jpg",
+  "/lightblue.jpg",
   "/lightgold.jpg",
 ]
 
