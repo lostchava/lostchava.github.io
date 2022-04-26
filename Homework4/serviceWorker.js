@@ -4,12 +4,12 @@ const assets = [
   "/index.html",
   "/style.css",
   "/app.js",
-  "Icon-192.png",
-  "Icon-256.png",
-  "Icon-384.png",
-  "Icon-512-1.png",
-  "lightbulue.jpg",
-  "lightgold.jpg",
+  "/Icon-192.png",
+  "/Icon-256.png",
+  "/Icon-384.png",
+  "/Icon-512-1.png",
+  "/lightbulue.jpg",
+  "/lightgold.jpg",
 ]
 
 self.addEventListener("install", installEvent => {
