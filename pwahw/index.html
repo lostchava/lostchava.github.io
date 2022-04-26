@@ -1,8 +1,9 @@
 <!doctype html>
 <html  lang="en">
-   <!-- manifest="mycache.appcache  might be used for manifest -->
+
 <head>
     
+    <!-- head and meta tags needed for file to work -->
     <title>Service Worker offline demo</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -18,7 +19,7 @@
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
     <meta name="theme-color" content="#db4938" />
 
-
+<!-- light gold image too small needed to adjust to make it go full web page  -->
     <style> 
     body {   
         background-image: url(''); 
@@ -32,9 +33,11 @@
 <nav>
 </nav>
 <div>
+    <!-- describing the web page and what PWA is useful for -->
 <h1>Progressive Web Application</h1>
 <h2>Chracteristics of Progressive Web Application</h2>
 <p>Progressive Web Application or PWA is a powerful tool that combines multiple technologies to produce a greater user experience. One of the best chracteristics of PWA is that it is responsive. Meaning that you can use the web app on multiple different screen sizes. With having a PWA so flexible in screen size you can also download it and make a PWA icon for the website on your home page. This allows users to easily access your PWA and again increase user experience. One of the major advantages of PWA is that you can access it whenever you would like. Meaning you can always load the page even when you're offline. This is done with JavaScript and the cache, allowing you to store the PWA data needed to work the page. This also helps the user experience as it cuts down on the load speed, making PWA fast and reliable. PWA is also very safe as it only works with "Https" meaning there is some security and saftey with your content. Overall this enhances the user experience which will increase traffic to your website and indirectly increase your sales.</p>
+<!-- drop down menu for selecting another background  -->
 <label for="Backgroundimage">Choose a background color:</label>
 <select name="Backgroundimagecolor" id="Backgroundimage">
     <option value="">Please choose a Background</option>
@@ -43,6 +46,7 @@
 </select>
 </div>
 </body>
+<!-- script used to change what background color is being used -->
 <script>
 document.getElementById('Backgroundimage').addEventListener('change', function() {
     let bgi=document.getElementById("Backgroundimage");
@@ -53,7 +57,6 @@ document.getElementById('Backgroundimage').addEventListener('change', function()
     else document.body.style.backgroundImage = ""
 }); 
 
-// <div class="container"></div>
 
 </script>
 <script src="app.js"></script>
