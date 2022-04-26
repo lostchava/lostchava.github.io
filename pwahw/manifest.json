@@ -1,8 +1,9 @@
 {
-    "name": "Progressive Web Application",
+  "name": "Progressive Web Application",
   "short_name": "PWA",
   "start_url": "index.html",
   "display": "standalone",
+  "scope": ".",
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
   "orientation": "landscape",
