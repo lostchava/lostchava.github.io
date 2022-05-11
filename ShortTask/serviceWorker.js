@@ -1,4 +1,4 @@
-    var CACHE_VERSION = 'PWA-v1';
+    var CACHE_VERSION = 'Short-v1';
     var CACHE_FILES = [
       "index.html",
       'app.js',
