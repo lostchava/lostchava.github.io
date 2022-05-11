@@ -1,0 +1,24 @@
+html {
+	height: 100%;
+}
+p{
+	font-size: .85rem;
+}
+body { background-color: white; 
+       font-family: Helvetica, Arial, sans-serif; 
+	   min-height: 100%;
+	   font-size: 1.5rem; 
+	   color: blue; }
+h2{
+	font-size: 1rem; 
+}	   
+h1 { text-align: center; 
+     margin-bottom: 2rem;
+	 font-style: italic; }
+
+img { float: left; 
+      border: 3px solid blue;
+	  border-radius: 10px; }
+label{
+	font-size: .85rem;
+}

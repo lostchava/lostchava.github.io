@@ -1,0 +1,63 @@
+<!doctype html>
+<html  lang="en">
+
+<head>
+    
+    <!-- head and meta tags needed for file to work -->
+    <title>Progressive Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icon-192x192.png" />
+    <link rel="apple-touch-icon" href="icon-256x256.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512-1x512-1.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+
+<!-- light gold image too small needed to adjust to make it go full web page  -->
+    <style> 
+    body {   
+        background-image: url(''); 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+
+<body>
+<nav>
+</nav>
+<div>
+    <!-- describing the web page and what PWA is useful for -->
+<h1>Progressive Web Application</h1>
+<h2>Chracteristics of Progressive Web Application</h2>
+<p>Progressive Web Application or PWA is a powerful tool that combines multiple technologies to produce a greater user experience. One of the best chracteristics of PWA is that it is responsive. Meaning that you can use the web app on multiple different screen sizes. With having a PWA so flexible in screen size you can also download it and make a PWA icon for the website on your home page. This allows users to easily access your PWA and again increase user experience. One of the major advantages of PWA is that you can access it whenever you would like. Meaning you can always load the page even when you're offline. This is done with JavaScript and the cache, allowing you to store the PWA data needed to work the page. This also helps the user experience as it cuts down on the load speed, making PWA fast and reliable. PWA is also very safe as it only works with "Https" meaning there is some security and saftey with your content. Overall this enhances the user experience which will increase traffic to your website and indirectly increase your sales.</p>
+<!-- drop down menu for selecting another background  -->
+<label for="Backgroundimage">Choose a background color:</label>
+<select name="Backgroundimagecolor" id="Backgroundimage">
+    <option value="">Please choose a Background</option>
+  <option value="Blue">Blue</option>
+  <option value="Gold">Gold</option>
+</select>
+</div>
+</body>
+<!-- script used to change what background color is being used -->
+<script>
+document.getElementById('Backgroundimage').addEventListener('change', function() {
+    let bgi=document.getElementById("Backgroundimage");
+    if (bgi.selectedIndex === 1)
+        document.body.style.backgroundImage = "url(lightblue.jpg)"
+    else if (bgi.selectedIndex === 2)
+        document.body.style.backgroundImage = "url(lightgold.jpg)"
+    else document.body.style.backgroundImage = ""
+}); 
+
+
+</script>
+<script src="app.js"></script>
+</html>
