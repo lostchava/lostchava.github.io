@@ -1,6 +1,6 @@
 {
-  "name": "Progressive Web Application",
-  "short_name": "PWA",
+  "name": "Short Task",
+  "short_name": "Short",
   "start_url": "index.html",
   "display": "standalone",
   "scope": ".",
