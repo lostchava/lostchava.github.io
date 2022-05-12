@@ -15,13 +15,13 @@
     <link rel="manifest" href="manifest.json" />
 
 
-    <!-- ios support -->
+    <!-- ios support
     <link rel="apple-touch-icon" href="icon-192x192.png" />
     <link rel="apple-touch-icon" href="icon-256x256.png" />
     <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
     <link rel="apple-touch-icon" href="images/icons/icon-512-1x512-1.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-    <meta name="theme-color" content="#db4938" />
+    <meta name="theme-color" content="#db4938" /> -->
 
 
 </head>
@@ -55,18 +55,5 @@
 
 </div>
 </body>
-<!-- script used to change what background color is being used -->
-<script>
-document.getElementById('Backgroundimage').addEventListener('change', function() {
-    let bgi=document.getElementById("Backgroundimage");
-    if (bgi.selectedIndex === 1)
-        document.body.style.backgroundImage = "url(lightblue.jpg)"
-    else if (bgi.selectedIndex === 2)
-        document.body.style.backgroundImage = "url(lightgold.jpg)"
-    else document.body.style.backgroundImage = ""
-}); 
-
-
-</script>
 <script src="app.js"></script>
 </html>
