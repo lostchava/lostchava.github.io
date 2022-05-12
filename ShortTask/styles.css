@@ -1,18 +1,21 @@
 html {
 	height: 100%;
+
 }
 p{
 	padding-right: 1rem;
     padding-left: 0.5rem;
 	font-size: .85rem;
 }
-body { background-color: lightgoldenrodyellow; 
+body { 
        font-family: Helvetica, Arial, sans-serif; 
+	   background-color: lightblue; 
 	   min-height: 100%;
 	   padding-top: 4rem;
 	   font-size: 1.5rem; 
 	    }
 h2{
+	padding-left: 0.5rem;
 	font-size: 1rem; 
 	padding-top: 4rem;
 }	   
