@@ -7,13 +7,16 @@ p{
 body { background-color: tan; 
        font-family: Helvetica, Arial, sans-serif; 
 	   min-height: 100%;
+	   padding-top: 4rem;
 	   font-size: 1.5rem; 
 	    }
 h2{
 	font-size: 1rem; 
+	padding-top: 4rem;
 }	   
 h1 { text-align: center; 
      margin-bottom: 2rem;
+	 padding-top: 4rem;
 	 font-style: italic; }
 
 img { float: left; 
