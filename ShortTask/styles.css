@@ -4,11 +4,11 @@ html {
 p{
 	font-size: .85rem;
 }
-body { background-color: white; 
+body { background-color: tan; 
        font-family: Helvetica, Arial, sans-serif; 
 	   min-height: 100%;
 	   font-size: 1.5rem; 
-	   color: blue; }
+	    }
 h2{
 	font-size: 1rem; 
 }	   
