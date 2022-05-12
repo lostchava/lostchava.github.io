@@ -2,6 +2,8 @@ html {
 	height: 100%;
 }
 p{
+	padding-right: 1rem;
+    padding-left: 0.5rem;
 	font-size: .85rem;
 }
 body { background-color: lightgoldenrodyellow; 
