@@ -3,7 +3,7 @@
       "index.html",
       'app.js',
       'styles.css',
-    //   "Icon-192.png",
+       "phoneGap.png",
     //   "Icon-256.png",
     //   "Icon-384.png",
     //   "Icon-512-1.png",

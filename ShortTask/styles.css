@@ -3,33 +3,71 @@ html {
 
 }
 p{
+	background-color: #ffe5a9;
 	padding-right: 1rem;
     padding-left: 0.5rem;
 	font-size: .85rem;
 }
 body { 
-       font-family: Helvetica, Arial, sans-serif; 
-	   background-color: lightblue; 
+	   color: 	#423f3b;
+	   background-color: #ffe5a9;
 	   min-height: 100%;
 	   padding-top: 4rem;
 	   font-size: 1.5rem; 
 	    }
 h2{
+	background-color:#ffe5a9;
 	padding-left: 0.5rem;
-	font-size: 1rem; 
 	padding-top: 4rem;
 }	   
 nav{
 	padding-bottom: 2rem;
 }
-h1 { text-align: center; 
+h1 {
+	 font-family: Helvetica, Arial, sans-serif;
+	 background-color: #525266;
+	 color: #cbbeb5;
+	 text-align: center; 
      margin-bottom: 2rem;
 	 padding-top: 4rem;
+	 padding-bottom: 4rem;
 	 font-style: italic; }
 
-img { float: left; 
-      border: 3px solid blue;
-	  border-radius: 10px; }
+.accordion-body{
+	padding:0rem;
+}
+.accordion-body p{
+	border:.25rem solid 	#ff6666;
+	padding:1rem;
+}
+
+.accordion-header{
+	padding-left:0rem;
+	padding-right: 75%;
+}
+
+.accordion-item{
+	border:none;
+}
+.accordion-button{
+	color: #cbbeb5;
+	background-color:#525266;
+	padding-right: .75rem;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.imageContainer{
+	height:15rem;
+	width:15rem;
+}
+.gallery { 
+	width: 100%;
+	height: 15rem;
+	display:flex;
+	justify-content: space-between;
+}
 label{
 	font-size: .85rem;
 }

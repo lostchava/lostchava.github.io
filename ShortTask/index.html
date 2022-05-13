@@ -5,13 +5,14 @@
     
     <!-- head and meta tags needed for file to work -->
     <title>PhoneGap vs Flutter vs React Native</title>
-    <link rel="stylesheet" href="styles.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8">
    
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="manifest" href="manifest.json" />
 
@@ -45,10 +46,56 @@
   <div>
       <!-- describing the web page and what PWA is useful for -->
   <h1>PhoneGap vs Flutter vs React Native</h1>
+
+  <div class="gallery">
   <h2>PhoneGap</h2>
-  <p>Progressive Web Application or PWA is a powerful tool that combines multiple technologies to produce a greater user experience. One of the best chracteristics of PWA is that it is responsive. Meaning that you can use the web app on multiple different screen sizes. With having a PWA so flexible in screen size you can also download it and make a PWA icon for the website on your home page. This allows users to easily access your PWA and again increase user experience. One of the major advantages of PWA is that you can access it whenever you would like. Meaning you can always load the page even when you're offline. This is done with JavaScript and the cache, allowing you to store the PWA data needed to work the page. This also helps the user experience as it cuts down on the load speed, making PWA fast and reliable. PWA is also very safe as it only works with "Https" meaning there is some security and saftey with your content. Overall this enhances the user experience which will increase traffic to your website and indirectly increase your sales.</p>
+  <div class="imageContainer">
+  <img src="phoneGap.png" class="img-fluid" alt="Basic image that explains what phoneGap does"> 
+  </div>
+  </div>
+  <div class="accordion" id="toysAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Details
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#toysAccordion">
+        <div class="accordion-body">
+         <p>Progressive Web Application or PWA is a powerful tool that combines multiple technologies to produce a greater user experience. One of the best chracteristics of PWA is that it is responsive. Meaning that you can use the web app on multiple different screen sizes. With having a PWA so flexible in screen size you can also download it and make a PWA icon for the website on your home page. This allows users to easily access your PWA and again increase user experience. One of the major advantages of PWA is that you can access it whenever you would like. Meaning you can always load the page even when you're offline. This is done with JavaScript and the cache, allowing you to store the PWA data needed to work the page. This also helps the user experience as it cuts down on the load speed, making PWA fast and reliable. PWA is also very safe as it only works with "Https" meaning there is some security and saftey with your content. Overall this enhances the user experience which will increase traffic to your website and indirectly increase your sales.</p>
+        </div>
+      </div>
+    </div>
+
   <h2>Flutter</h2>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Details
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#toysAccordion">
+      <div class="accordion-body">
+        <img src="Toy2.png" class="img-fluid" alt="Fun Swirling pathways used to make creative fun paths for toy balls to fall down"> 
+        <p></p>
+      </div>
+    </div>
+  </div>
   <h2>React Native</h2>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Details
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#toysAccordion">
+      <div class="accordion-body">
+        <img src="Toy3.png" class="img-fluid" alt="Interactive ice cream truck that features a functional tablet with 30+ sounds and phrases, 25 colorful accessories, and a whole lot of educational activities!"> 
+        <p>Ice Cream Truck: Play all day and learn a ton with an interactive ice cream truck that features a functional tablet with 30+ sounds and phrases, 25 colorful accessories, and a whole lot of educational activities!</p> 
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
 </body>
