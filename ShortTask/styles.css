@@ -3,6 +3,7 @@ html {
 
 }
 p{
+	margin:0rem;
 	background-color: #ffe5a9;
 	padding-right: 1rem;
     padding-left: 0.5rem;
@@ -16,9 +17,10 @@ body {
 	   font-size: 1.5rem; 
 	    }
 h2{
+	margin:0rem;
 	background-color:#ffe5a9;
 	padding-left: 0.5rem;
-	padding-top: 4rem;
+	padding-top: 1rem;
 }	   
 nav{
 	width:100%;
@@ -88,8 +90,10 @@ img{
 	height: 15rem;
 	display:flex;
 	justify-content: space-between;
-	margin: 0;
 }
 label{
 	font-size: .85rem;
 }
+.wpsm_panel-group .wpsm_panel .wpsm_panel-heading svg path{
+	display:none;
+ }

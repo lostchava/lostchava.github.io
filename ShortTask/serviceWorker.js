@@ -5,10 +5,7 @@
       'styles.css',
       "phoneGap.png",
       "flutter.png",
-    //   "Icon-384.png",
-    //   "Icon-512-1.png",
-    //   "lightblue.jpg",
-    //   "lightgold.jpg",
+      "reactNative.png",
   ];
   
   self.addEventListener('install', event => {
