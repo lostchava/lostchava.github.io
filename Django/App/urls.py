@@ -8,6 +8,6 @@ urlpatterns = [
     path('AboutUs', views.AboutUsView.as_view(), name="aboutus"),
     path('AdoptionPage', views.AdoptionPageView.as_view(), name="adoptionpage"),
     path('ContactUs', views.ContactUsView.as_view(), name="contactus"),
-    #can access the blog by slug
+    #can access the slug
     path('<slug:slug>/', views.PostList.as_view(), name="details"),
 ]

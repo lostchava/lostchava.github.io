@@ -2,14 +2,14 @@
 {% block content %}
 
 
-<h3>About Andrew</h3>
+<h3>About Wag Adoption</h3>
 
 <div id ="ProfContainer"></div>
-    <img src="picture.jpg" alt="Andrew sitting on a green bench at the park using sunglasses holding a sandwich"> 
-    <p>My name is Andrew Sprague and I am a student at CSM currently studying computer science. I am born and raised in the bay area my whole life and so has the majority of my family.
-            I grew up playing lots of sports and that love of sports has carried over into adulthood. You can catch me either watching or going to many sporting events. This is the same 
-            for all the music festivals and concerts I go to. I do have a BFA degree where I am able to express my creative side of myself. I love to make art for my friends and family, mainly 
-            making logos or designs for their products. The most importnat things in my life are my family and my friends who I trust and love more than anything in this world.
+
+<!-- This is the code needed to refer to your image inside the folder -->
+    <p>{% load static %} <img src="{% static "App/media/wag.png" %}" alt="Wag company logo">  </p>
+
+    <p>We are Wag a company that has been handling dogs and animals adoption for over thirty plus years. We take great pride in our work and our care for those without a home.
     </p>
 </div>
 

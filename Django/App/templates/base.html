@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- This is our base for all our webpages and is linked via content blocks -->
 {% load static %}
 
 <head>
@@ -7,11 +9,15 @@
     <!-- phone viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'App/style.css' %}" />
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" /> -->
     <!-- Bootstrap stuff -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
+
+<!-- nav bar stuff -->
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">

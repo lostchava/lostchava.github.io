@@ -8,11 +8,10 @@ from django.views import generic
 
 #This class helps us organize the homepage 
 class PostList(generic.ListView):
-    #This will list our posts that are published in decsending order
     queryset = Post.objects.filter(status=1)
     #home page
     template_name = 'index.html'
-
+# links to our web page
 class AboutUsView(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = 'aboutUs.html'
