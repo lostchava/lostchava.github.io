@@ -1,0 +1,81 @@
+import java.util.Scanner;
+
+public class A7_1 {
+	public static void main(String[] args) {
+	Scanner in = new Scanner(System.in);			//Input and Values
+	Scanner input = new Scanner(System.in);
+	int first = 0;
+	int last = 0;
+	int numEntered = 0;
+	int sum = 0;
+	Boolean Seven = true;
+	
+	
+	System.out.print("How many numbers will be entered? ");
+	sum = in.nextInt(); 							//Question and Input
+	
+	for (int i = 1; i <= sum; i++) {				//Iteration
+		System.out.print("Enter a num: ");
+		numEntered = input.nextInt();				//Input for second question
+		
+		if  (Seven == true) {						//Capturing the first '7' and then making statement false
+			if(numEntered == 7) {
+				first = i;
+				Seven = false;		
+			}
+			
+		}
+		if (numEntered == 7) {						//Capturing the position of last '7'
+			last = i;
+		}
+	}
+		
+	if (first == 0) {								// If statement to print if no 7's
+		System.out.println("Sorry, no 7's were entered ");
+	}
+	
+	else {
+	
+	System.out.println("The first 7 was in position "+ first);
+	System.out.println("The last 7 was in position "+ last);
+	}
+	in.close();
+	input.close();
+	/*
+	 * 	How many numbers will be entered? 8
+		Enter a num: 5
+		Enter a num: 7
+		Enter a num: 6
+		Enter a num: 7
+		Enter a num: 7
+		Enter a num: 3
+		Enter a num: 8
+		Enter a num: 6
+		The first 7 was in position 2
+		The last 7 was in position 5
+
+		How many numbers will be entered? 8
+		Enter a num: 5
+		Enter a num: 2
+		Enter a num: 6
+		Enter a num: 7
+		Enter a num: 1
+		Enter a num: 3
+		Enter a num: 8
+		Enter a num: 6
+		The first 7 was in position 4
+		The last 7 was in position 4
+
+		How many numbers will be entered? 8
+		Enter a num: 5
+		Enter a num: 1
+		Enter a num: 6
+		Enter a num: 5
+		Enter a num: 9
+		Enter a num: 3
+		Enter a num: 8
+		Enter a num: 6
+		Sorry, no 7's were entered 
+	 */
+}	
+}	
